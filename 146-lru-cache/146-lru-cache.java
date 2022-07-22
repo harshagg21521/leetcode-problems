@@ -13,6 +13,9 @@ class LRUCache {
     HashMap<Integer,Node> map=new HashMap<>();
     
     void remove(Node node){
+        if(head==null){
+            return;
+        }
         if(size==1){
             head=tail=null;
         }
