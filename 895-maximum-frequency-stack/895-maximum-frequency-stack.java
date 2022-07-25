@@ -35,7 +35,6 @@ class FreqStack {
         else{
             map.remove(ans);
         }
-        System.out.println(ans);
         return ans;
     }
 }
