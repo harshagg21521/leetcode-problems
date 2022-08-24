@@ -14,11 +14,8 @@
  * }
  */
 class Solution {
-    public int sum=0;
+     int sum=0;
     public int sumNumbers(TreeNode root) {
-       if(root==null){
-           return 0;
-       }
         helper(root,0);
         return sum;
     }
