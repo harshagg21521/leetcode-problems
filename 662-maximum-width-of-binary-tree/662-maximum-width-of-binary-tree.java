@@ -29,7 +29,7 @@ class Solution {
         if(root==null){
             return ;
         }
-        helper(root.left,level+1,idx*2,map);
+        helper(root.left,level+1,2*idx,map);
         helper(root.right,level+1,2*idx+1,map);
         Pair p=null;
         if(map.containsKey(level)){
