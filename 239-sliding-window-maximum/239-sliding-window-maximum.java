@@ -26,7 +26,9 @@ class Solution {
             else{
                 ans[i]=nums[j];
                 i++;
-                j=i;
+                if(j<i){
+                    j=i;
+                }
             }
         }
         return ans;
