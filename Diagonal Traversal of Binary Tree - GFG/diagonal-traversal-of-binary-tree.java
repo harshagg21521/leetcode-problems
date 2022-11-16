@@ -124,14 +124,12 @@ class Node{
 }*/
 class Tree
 {
-    int md=0;
+   
     public void traversal(HashMap<Integer,ArrayList<Integer>> map,int diag,Node root ){
         if(root==null){
             return ;
         }
-        if(md<diag){
-            md=diag;
-        }
+        
         if(!map.containsKey(diag)){
             map.put(diag,new ArrayList<>());
         }
